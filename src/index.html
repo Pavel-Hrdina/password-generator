@@ -12,22 +12,25 @@
 <body>
   <div id="app">
     <div class="grid place-items-center h-screen">
-      <div class="rounded-lg shadow-lg bg-white max-w-lg">
+      <div class="rounded-lg shadow-lg bg-white max-w-lg h-auto w-full">
         <div class="p-6">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">Password Generator</h5>
-          <p class="text-gray-700 text-base mb-4">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Generátor hesel</h5>
+          <p class="text-gray-700 text-base mb-4" id="text">
             <span class="italic font-semibold">Jednoduchý generátor hesel vytvořený pomocí pomocí tailwind css a
               build tool
               vite.</span>
             Obsahuje možnost vybrat si: délku hesla, složitost, obah velkých a malých písmen, čísla a symboly
           </p>
-          <p class="text-gray-700 text-base mb-4" id="heslo">
-            Heslo
-          </p>
           <button type="button"
-            class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+            class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            id="schovatText">
+            Schovat text
+          </button>
+          <p class="text-gray-700 text-base mb-2 mt-5">
+            Heslo: <span id="heslo"></span>
+          </p>
         </div>
-        <div class="grid place-items-center p-5">
+        <div class="grid place-items-center p-5 m-0">
           <label for="minmax-range" class="w-auto mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
             Délka Hesla: <span id="delkaHesla">0</span> znaků
           </label>
